@@ -20,6 +20,8 @@ buildscript {
     repositories {
         mavenLocal()
         mavenCentral()
+        <%=/* FIXME: remove when Spring Boot 2.3 is released */%>
+        maven { url 'https://repo.spring.io/milestone' }
         gradlePluginPortal()
         maven { url "https://repo.spring.io/plugins-release" }
     }
